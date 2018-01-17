@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <% include ./partials/head %>
+  </head>
+  <body>
+      <header>
+          <% include ./partials/header %>
+      </header>
+      <ul>
+      <% directories.forEach(function(directory) { %>
+         <li><%= directory %></li>
+        <% }); %>
+    </ul>
+  </body>
+</html>
