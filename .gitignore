@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/.tscache/*
 
 # dependencies
 /node_modules

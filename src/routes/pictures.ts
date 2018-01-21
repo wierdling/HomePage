@@ -4,7 +4,7 @@ var path = require('path');
 
 router.get('/', function (req, res, next) {
     var p = path.join(__dirname, '../views/pictures')
-    var directories = walkDirsSync(p);
+    var directories = walkDirsSync(p, null);
     res.render('pictures', { title: 'Pictures', directories: directories });
 });
 
